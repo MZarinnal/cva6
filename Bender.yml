@@ -298,6 +298,7 @@ sources:
         include_dirs:
           - common/local/util
         files:
+          - vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv
           - common/local/util/tc_sram_fpga_wrapper.sv
 
       - target: not(synthesis)
