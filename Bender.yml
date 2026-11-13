@@ -17,9 +17,9 @@ dependencies:
     git: "https://github.com/openhwgroup/cvfpu.git"
     rev: 3eb6afe  # branch: develop
   hpdcache:
-    git: "https://github.com/pulp-platform/cv-hpdcache.git"
-    rev: openhw-master-candidate
-    pass_targets: ["hpdcache_axi"]
+    git: "https://github.com/MZarinnal/cv-hpdcache.git"
+    rev: openhw-master-candidate-64
+    pass_targets: ["hpdcache_axi", "hpdcache_tc_sram"]
   obi:
     git: "https://github.com/pulp-platform/obi.git"
     version: 0.1.7
@@ -268,6 +268,7 @@ sources:
       - core/cache_subsystem/cva6_hpdcache_wrapper.sv
       - core/cache_subsystem/cva6_hpicache_if_adapter.sv
       - core/cache_subsystem/cva6_hpicache_wrapper.sv
+      - core/cache_subsystem/hpdcache_tc_sram.sv
 
       # Physical Memory Protection
       - core/pmp/src/pmp.sv
